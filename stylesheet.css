@@ -1,0 +1,13 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#week {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20em;
+    font-family: 'Roboto', sans-serif;
+}
