@@ -1,6 +1,7 @@
 body {
-    background-color: #000;
+    background-color: #222;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -10,4 +11,12 @@ body {
     font-weight: bold;
     font-size: 20em;
     font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+footer {
+    margin-top: 2em;
 }
