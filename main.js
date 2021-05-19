@@ -1,5 +1,5 @@
 
-const semesterStart = new Date('2021-02-15');
+const semesterStart = new Date('2021-09-20');
 semesterStart.setHours(0,0,0,0);
 let now = new Date();
 now.setHours(0,0,0,0);
@@ -16,8 +16,8 @@ function init() {
         week();
     } else {
         const element = document.getElementById("week");
-        element.innerText = `A je po semestri, skúškové (na FEI) začína 04.01.2021!\nLS začína 15.02.2021`;
-        element.style.fontSize = '2em';
+        element.innerText = `See ya again on 20.09.2021!`;
+        element.style.fontSize = '3em';
     }
 }
 
