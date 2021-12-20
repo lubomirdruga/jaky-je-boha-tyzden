@@ -4,6 +4,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 #week {
@@ -19,4 +21,17 @@ html, body {
 
 footer {
     margin-top: 2em;
+}
+
+/* snow effect */ 
+.snowflake {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+    z-index: 999;
 }
