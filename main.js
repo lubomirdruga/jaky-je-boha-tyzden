@@ -1,5 +1,5 @@
 
-const semesterStart = new Date('2021-09-20');
+const semesterStart = new Date('2022-02-14');
 semesterStart.setHours(0,0,0,0);
 let now = new Date();
 now.setHours(0,0,0,0);
@@ -16,7 +16,7 @@ function init() {
         week();
     } else {
         const element = document.getElementById("week");
-        element.innerText = `See ya again on 20.09.2021!`;
+        element.innerText = `See ya again on ${semesterStart.toLocaleDateString('sk')}!`;
         element.style.fontSize = '3em';
     }
 }
