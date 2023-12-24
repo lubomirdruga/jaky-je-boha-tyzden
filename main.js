@@ -1,5 +1,5 @@
 
-const semesterStart = new Date('2023-09-25');
+const semesterStart = new Date('2023-02-12');
 semesterStart.setHours(0,0,0,0);
 let now = new Date();
 now.setHours(0,0,0,0);
