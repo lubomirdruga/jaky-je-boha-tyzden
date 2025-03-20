@@ -15,6 +15,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#greeting {
+    color: #FFF;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, a:visited {
+    color: white;
+}
+
 html, body {
     height: 100%;
 }
