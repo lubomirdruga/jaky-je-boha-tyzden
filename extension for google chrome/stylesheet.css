@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: -apple-system, sans-serif;
+  background-color: #fff;
+}
+
+
+.wrapper {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 15px ;
+}
+
+#week {
+  font-weight: bold;
+  font-size: 10em;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  color: #000;
+  z-index: 999;
+}
+
+.github-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.github-button::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.github-button:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+/* snow effect */ 
+.snowflake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+  z-index: 999;
+}
+
+
+.card {
+  width: 150px;
+  height: 200px;
+  position: relative;
+}
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background-color: 
+    rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px 
+    rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#b0e633, #53ef7d);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up 2s ease-in infinite alternate-reverse;
+}
+.circle:nth-child(1){
+  top: -25px;
+  left: -25px;
+}
+.circle:nth-child(2){
+  bottom: -25px;
+  right: -25px;
+  animation: move-down 2s ease-in infinite alternate-reverse;
+}
+
+@keyframes move-up {
+  to{
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down {
+  to{
+    transform: translateY(10px);
+  }
+}
+
+
+/* rools for dark theme */
+@media (prefers-color-scheme: dark) {
+  body, .wrapper  { 
+    background: #000; 
+    color: #fff;
+  } 
+    
+  #week { 
+    color: #fff;
+  } 
+ 
+  .circle {
+    background: radial-gradient(#cd0707, #e00b0b);
+  }
+
+  .github-button {
+    color: #fff
+  }
+}
