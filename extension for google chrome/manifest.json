@@ -1,0 +1,12 @@
+{
+  "name": "Number Week",
+  "version": "1.0.0",
+  "description": "Tool for students at FEI TUKE that knows what week of the semester it is.",
+  "manifest_version": 3,
+  "author": "Yemets Kostiantyn",
+  "icons": {"128": "logo.png"},
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "number week"
+  }
+}
